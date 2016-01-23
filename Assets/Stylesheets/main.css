@@ -26,4 +26,14 @@ h2{
     background-image: url("http://assets.nydailynews.com/polopoly_fs/1.1066559!/img/httpImage/image.jpg_gen/derivatives/article_970/qline29f-1-web.jpg");
     background-size: cover;
     background-repeat: no-repeat;
+    border-radius: 20px;
+}
+#bg{
+    background: #000;
+    opacity: 0.7;
+    border-radius: 20px;
+}
+/*Form title*/
+h1{
+    color: #fff;
 }
