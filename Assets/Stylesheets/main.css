@@ -1,0 +1,23 @@
+
+/*Start of stylesheet*/
+
+/*================================
+Google fonts used:
+font-family: 'Oswald', sans-serif;
+font-family: 'Ubuntu', sans-serif;
+font-family: 'Lobster', cursive;
+ @import url(https://fonts.googleapis.com/css?family=Oswald|Ubuntu|Lobster);
+=================================*/
+@import url(https://fonts.googleapis.com/css?family=Oswald|Ubuntu|Lobster);
+
+body{
+    font-family: 'Lobster', cursive;
+}
+
+h1 {
+    font-family: 'Oswald', sans-serif;
+}
+h2{
+    font-family: 'Ubuntu', sans-serif;
+}
+
