@@ -8,7 +8,12 @@
     </head>
     <body>
         <form>
-            <select name="food"><label>Food</label>
+            <div class="row column small-10" id="form">
+                <div class="column small-8 small-centered">
+                <label><h1 class="text-center">Order Here</h1></label>
+                    </div>
+                <div class="column small-8 small-centered">
+            <select name="food" required><label>Food</label>
               <option value="" selected>Friday</option>
               <option value="0">Saturday</option>
               <option value="1">Sunday</option>
@@ -18,7 +23,9 @@
                 <option value="5">Sunday</option>
                 <option value="6">Sunday</option>
 </select>
-            <select name="drink"><label>Drinks</label>
+                </div>
+                <div class="column small-8 small-centered">
+            <select name="drink" required><label>Drinks</label>
                 <option value="" selected>Friday</option>
               <option value="0">Saturday</option>
               <option value="1">Sunday</option>
@@ -27,7 +34,20 @@
                 <option value="4">Sunday</option>
                 <option value="5">Sunday</option>
                 <option value="6">Sunday</option>
-</select>
+                    </select>
+                </div>
+                <div class="column small-8 small-centered">
+                <div class="column small-6 float-left small-centered">
+            <input type="text" value="name" required placeholder="Full Name" class="column small-6">
+                    </div>
+                <div class="small-6 float-right">
+            <input type="email" value="email" required placeholder="E-mail address" class="column small-6">
+                </div>
+                </div>
+                <div class="column small-4 small-centered text-center">
+                <input type="submit" id="sub">
+                    </div>
+                </div>
         </form>
 
     </body>
