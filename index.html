@@ -1,57 +1,65 @@
 <!DOCTYPE html>
 <html>
-    <head>
-        <meta charset="utf-8">
-        <title></title>
-        <link href="Assets/Stylesheets/foundation.css" rel="stylesheet">
-        <link href="Assets/Stylesheets/main.css" rel="stylesheet">
-    </head>
-    <body>
-        <form action="mailto:cndeti@gmail.com" method="post" enctype="text/plain">
-            <div class="row column small-10 large-8" id="form">
-                <div class="column small-8 small-centered">
-                    <div  id="bg" class="row">
-                <label><h1 class="text-center">Order Here</h1></label>
-                        <h5 class="text-center">To order multiple items click while holding ctrl each item.</h5>
 
-                <div class="column small-8 small-centered">
-                    <label><h4>Food</h4></label>
-            <select name="food" required multiple>
-              <option value="Rice">Rice</option>
-              <option value="Pilau">Pilau</option>
-                <option value="Ugali">Ugali</option>
-                <option value="Quarter chicken">1/4 roast chicken</option>
-                <option value="Half chicken">1/2 roast chicken</option>
-                <option value="Full chicken">Full roast chicken</option>
-                <option value="Stew">Chicken stew</option>
-</select>
-                </div>
-                <div class="column small-8 small-centered">
-                    <label><h4>Drinks</h4></label>
-            <select name="drink" required multiple>
-              <option value="Soda">Soda</option>
-              <option value="Apple juice">Apple juice</option>
-                <option value="Orange juice">Orange Juice</option>
-                <option value="Lemonade">Lemonade</option>
-                <option value="Water">Water</option>
-                <option value="Red wine">Red wine</option>
-                <option value="White wine">White wine</option>
-                    </select>
-                </div>
-                <div class="column small-8 small-centered">
-                <div class="column small-6 float-left small-centered">
-            <input type="text" required placeholder="Name" class="column small-12">
+<head>
+    <meta charset="utf-8">
+    <title></title>
+    <link href="Assets/Stylesheets/foundation.css" rel="stylesheet">
+    <link href="Assets/Stylesheets/main.css" rel="stylesheet">
+    <script src="https://cdn.firebase.com/js/client/2.4.0/firebase.js"></script>
+</head>
+
+<body>
+    <form action="mailto:cndeti@gmail.com" method="post" enctype="text/plain">
+        <div class="row column small-10 large-8" id="form">
+            <div class="column small-8 small-centered">
+                <div id="bg" class="row">
+                    <label>
+                        <h1 class="text-center">Order Here</h1></label>
+                    <h5 class="text-center">To order multiple items click while holding ctrl each item.</h5>
+
+                    <div class="column small-8 small-centered">
+                        <label>
+                            <h4>Food</h4></label>
+                        <select name="food" required multiple>
+                            <option value="Rice">Rice</option>
+                            <option value="Pilau">Pilau</option>
+                            <option value="Ugali">Ugali</option>
+                            <option value="Quarter chicken">1/4 roast chicken</option>
+                            <option value="Half chicken">1/2 roast chicken</option>
+                            <option value="Full chicken">Full roast chicken</option>
+                            <option value="Stew">Chicken stew</option>
+                        </select>
                     </div>
-                <div class="small-6 float-right">
-            <input type="email" required placeholder="E-mail" class="column small-12">
-                </div>
-                </div>
-                <div class="column small-4 small-centered text-center">
-                <input type="submit" id="sub" onclick="link">
+                    <div class="column small-8 small-centered">
+                        <label>
+                            <h4>Drinks</h4></label>
+                        <select name="drink" required multiple>
+                            <option value="Soda">Soda</option>
+                            <option value="Apple juice">Apple juice</option>
+                            <option value="Orange juice">Orange Juice</option>
+                            <option value="Lemonade">Lemonade</option>
+                            <option value="Water">Water</option>
+                            <option value="Red wine">Red wine</option>
+                            <option value="White wine">White wine</option>
+                        </select>
+                    </div>
+                    <div class="column small-8 small-centered">
+                        <div class="column small-6 float-left small-centered">
+                            <input type="text" required placeholder="Name" class="column small-12">
+                        </div>
+                        <div class="small-6 float-right">
+                            <input type="email" required placeholder="E-mail" class="column small-12">
+                        </div>
+                    </div>
+                    <div class="column small-4 small-centered text-center">
+                        <input type="submit" id="sub" onclick="link">
                     </div>
                 </div>
-                </div>
-                </div>
-        </form>
-    </body>
+            </div>
+        </div>
+    </form>
+    <script src="Assets/Scripts/firebase.js"></script>
+</body>
+
 </html>
