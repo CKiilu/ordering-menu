@@ -21,7 +21,7 @@
                     <div class="column small-8 small-centered">
                         <label>
                             <h4>Food</h4></label>
-                        <select name="food" required multiple>
+                        <select id="food" required multiple>
                             <option value="Rice">Rice</option>
                             <option value="Pilau">Pilau</option>
                             <option value="Ugali">Ugali</option>
@@ -34,7 +34,7 @@
                     <div class="column small-8 small-centered">
                         <label>
                             <h4>Drinks</h4></label>
-                        <select name="drink" required multiple>
+                        <select id="drink" required multiple>
                             <option value="Soda">Soda</option>
                             <option value="Apple juice">Apple juice</option>
                             <option value="Orange juice">Orange Juice</option>
@@ -46,14 +46,14 @@
                     </div>
                     <div class="column small-8 small-centered">
                         <div class="column small-6 float-left small-centered">
-                            <input type="text" required placeholder="Name" class="column small-12">
+                            <input type="text" required placeholder="Name" class="column small-12" id="name">
                         </div>
                         <div class="small-6 float-right">
-                            <input type="email" required placeholder="E-mail" class="column small-12">
+                            <input type="email" required placeholder="E-mail" class="column small-12" id="email">
                         </div>
                     </div>
                     <div class="column small-4 small-centered text-center">
-                        <input type="submit" id="sub" onclick="link">
+                        <input type="submit" id="sub" onclick="store()">
                     </div>
                 </div>
             </div>
