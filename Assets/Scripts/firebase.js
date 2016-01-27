@@ -7,5 +7,11 @@ var food = document.getElementById('food'),
     currentEntry = faya.child('currentsubmission');
 
 button.addEventListener('click', function () {
-    currentEntry.push(email.value);
+var newpost = currentEntry.push({
+    Food: food.value,
+    Drinks: drink.value,
+    Name: name.value,
+    Email: email.value,
+})
+});
 });
