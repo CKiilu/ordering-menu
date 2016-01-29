@@ -7,59 +7,92 @@
     <link href="Assets/Stylesheets/foundation.css" rel="stylesheet">
     <link href="Assets/Stylesheets/main.css" rel="stylesheet">
     <script src="https://cdn.firebase.com/js/client/2.4.0/firebase.js"></script>
-</head>
+    <!-- Begin MailChimp Signup Form -->
+    <link href="//cdn-images.mailchimp.com/embedcode/classic-081711.css" rel="stylesheet" type="text/css">
+    <style type="text/css">
+        #mc_embed_signup {
+            background: #fff;
+            clear: left;
+            font: 14px Helvetica, Arial, sans-serif;
+        }
+        /* Add your own MailChimp form style overrides in your site stylesheet or in this style block.
+	   We recommend moving this block and the preceding CSS link to the HEAD of your HTML file. */
 
-<body>
-    <form action="http://formspree.io/cndeti@gmail.com" method="post" enctype="text/plain">
-        <div class="row column small-10 large-8" id="form">
-            <div class="column small-8 small-centered">
-                <div id="bg" class="row">
-                    <label>
-                        <h1 class="text-center">Order Here</h1></label>
-                    <h5 class="text-center">To order multiple items click while holding ctrl each item.</h5>
+    </style>
+    <div id="mc_embed_signup">
+        <form action="//github.us12.list-manage.com/subscribe/post?u=2c806071a71041848894a7910&amp;id=66bcd17621" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate" target="_blank" novalidate>
+            <div id="mc_embed_signup_scroll">
+                <h2>Subscribe to our mailing list</h2>
+                <div class="indicates-required"><span class="asterisk">*</span> indicates required</div>
+                <div class="mc-field-group">
+                    <label for="mce-NAME">Name <span class="asterisk">*</span>
+                    </label>
+                    <input type="text" value="" name="NAME" class="required" id="mce-NAME">
+                </div>
+                <div class="mc-field-group">
+                    <label for="mce-MMERGE3">Food <span class="asterisk">*</span>
+                    </label>
+                    <select name="MMERGE3" class="required" id="mce-MMERGE3">
+                        <option value=""></option>
+                        <option value="Ugali and stew">Ugali and stew</option>
+                        <option value="Rice and beans">Rice and beans</option>
+                        <option value="Rice and Stew">Rice and Stew</option>
+                        <option value="Githeri">Githeri</option>
 
-                    <div class="column small-8 small-centered">
-                        <label>
-                            <h4>Food</h4></label>
-                        <select id="food" name="food" required multiple>
-                            <option value="Rice">Rice</option>
-                            <option value="Pilau">Pilau</option>
-                            <option value="Ugali">Ugali</option>
-                            <option value="Quarter chicken">1/4 roast chicken</option>
-                            <option value="Half chicken">1/2 roast chicken</option>
-                            <option value="Full chicken">Full roast chicken</option>
-                            <option value="Stew">Chicken stew</option>
-                        </select>
-                    </div>
-                    <div class="column small-8 small-centered">
-                        <label>
-                            <h4>Drinks</h4></label>
-                        <select id="drink" required multiple name="drink">
-                            <option value="Soda">Soda</option>
-                            <option value="Apple juice">Apple juice</option>
-                            <option value="Orange juice">Orange Juice</option>
-                            <option value="Lemonade">Lemonade</option>
-                            <option value="Water">Water</option>
-                            <option value="Red wine">Red wine</option>
-                            <option value="White wine">White wine</option>
-                        </select>
-                    </div>
-                    <div class="column small-8 small-centered">
-                        <div class="column small-6 float-left small-centered">
-                            <input type="text" required placeholder="Name" name="name" class="column small-12" id="name">
-                        </div>
-                        <div class="small-6 float-right">
-                            <input type="email" required placeholder="E-mail" name="email" class="column small-12" id="email">
-                        </div>
-                    </div>
-                    <div class="column small-4 small-centered text-center">
-                        <input type="submit" id="sub" name="submit">
-                    </div>
+                    </select>
+                </div>
+                <div class="mc-field-group">
+                    <label for="mce-MMERGE4">Drinks </label>
+                    <select name="MMERGE4" class="" id="mce-MMERGE4">
+                        <option value=""></option>
+                        <option value="Water">Water</option>
+                        <option value="Fruit Juice">Fruit Juice</option>
+                        <option value="Soda">Soda</option>
+                        <option value="Beer">Beer</option>
+
+                    </select>
+                </div>
+                <div class="mc-field-group">
+                    <label for="mce-EMAIL">Email Address <span class="asterisk">*</span>
+                    </label>
+                    <input type="email" value="" name="EMAIL" class="required email" id="mce-EMAIL">
+                </div>
+                <div id="mce-responses" class="clear">
+                    <div class="response" id="mce-error-response" style="display:none"></div>
+                    <div class="response" id="mce-success-response" style="display:none"></div>
+                </div>
+                <!-- real people should not fill this in and expect good things - do not remove this or risk form bot signups-->
+                <div style="position: absolute; left: -5000px;" aria-hidden="true">
+                    <input type="text" name="b_2c806071a71041848894a7910_66bcd17621" tabindex="-1" value="">
+                </div>
+                <div class="clear">
+                    <input type="submit" value="Subscribe" name="subscribe" id="mc-embedded-subscribe" class="button">
                 </div>
             </div>
-        </div>
-    </form>
-    <script src="Assets/Scripts/firebase.js"></script>
-</body>
+        </form>
+    </div>
+    <script type='text/javascript' src='//s3.amazonaws.com/downloads.mailchimp.com/js/mc-validate.js'></script>
+    <script type='text/javascript'>
+        (function($) {
+            window.fnames = new Array();
+            window.ftypes = new Array();
+            fnames[1] = 'NAME';
+            ftypes[1] = 'text';
+            fnames[3] = 'MMERGE3';
+            ftypes[3] = 'dropdown';
+            fnames[4] = 'MMERGE4';
+            ftypes[4] = 'dropdown';
+            fnames[0] = 'EMAIL';
+            ftypes[0] = 'email';
+        }(jQuery));
+        var $mcj = jQuery.noConflict(true);
+
+    </script>
+    <!--End mc_embed_signup-->
+    <script src="Assets/Scripts/firebase.js">
+
+
+    </script>
+    </body>
 
 </html>
